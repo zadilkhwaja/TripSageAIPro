@@ -1,0 +1,20 @@
+version: '3'
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_SQUID_APP_ID=l9itq37g0b02p7bea1
+      - REACT_APP_SQUID_REGION=ap-south-1.aws
+      - REACT_APP_SQUID_ENVIRONMENT_ID=dev
+      - REACT_APP_SQUID_DEVELOPER_ID=9brtjo570n4fvwy3cg
+  backend:
+    image: squidcloud/backend:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - SQUID_APP_ID=l9itq37g0b02p7bea1
+      - SQUID_REGION=ap-south-1.aws
+      - SQUID_ENVIRONMENT_ID=dev
+      - SQUID_DEVELOPER_ID=9brtjo570n4fvwy3cg
