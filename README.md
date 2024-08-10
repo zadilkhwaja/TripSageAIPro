@@ -1,6 +1,4 @@
-# Getting started with Squid Cloud: A basic starter project
-
-This template provides a minimal setup for a [Squid Cloud](https://squid.cloud)-powered application based on the [Vite](https://vitejs.dev/) counter sample application.
+# Getting started with TripSage AI Pro:
 
 ## Prerequisites
 
@@ -15,7 +13,7 @@ For this project you will need:
 
 ### Setting up your `.env` file
 
-After cloning this project, go to the [Squid Cloud Console](https://console.squid.cloud), create an application (if haven't done so already) and click the **Create .env file** button under **Backend project**. This provides you with the command to create the `.env` file required for this template to work and run.
+After cloning this project, go to the [Squid Cloud Console](https://console.squid.cloud), create an application and click the **Create .env file** button under **Backend project**. This provides you with the command to create the `.env` file required for this template to work and run.
 
 Change to the backend directory, and install the required dependencies:
 
@@ -81,26 +79,6 @@ Verify that Vite server has started, providing URLs to access your app:
   ➜  press h + enter to show help
 ```
 
-## Exploring your Squid application
+## Exploring the application
 
-With both servers running, visit [http://localhost:5173/](http://localhost:5173/) in your web browser. You're now ready to experiment with the count button and explore the functionalities of your Squid Cloud application:
-
-1. Click **count is 0** a few times to increment the counter.
-2. Refresh the window. Notice the count remains at the previous increment instead of returning to 0.
-3. Open another browser tab and click the counter button. Notice the count updates simultaneously across multiple tabs.
-
-### Resetting the counter
-
-The Squid application in this project introduces a webhook that resets the counter. The webhook full URL from your local environment is displayed in the output of the `squid start` command you used to start the local backend server. To reset the counter, access the webhook URL from your browser.
-
-Check your terminal logs for the following line:
-
-```bash
-...
-| Webhook URL for resetCounter: https://YOUR_APP_ID-dev-YOUR_SQUID_DEVELOPER_ID.us-east-1.aws.squid.cloud/webhooks/resetCounter   |
-...
-```
-
-## Next steps
-
-To learn more about Squid's real-time data capabilities, view the [Client SDK documentation](https://docs.squid.cloud/docs/development-tools/client-sdk/). To find out how to integrate with your own data sources, view the [Database integrations documentation](https://docs.squid.cloud/docs/integrations/database/)
+With both servers running, visit [http://localhost:5173/](http://localhost:5173/) in your web browser.
